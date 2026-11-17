@@ -25,7 +25,7 @@ def search_users():
     name = request.args.get("name", "")
     conn = get_connection()
     cur = conn.cursor()
-    cur.execute("SELECT id, name FROM users WHERE name = '%s'" % name)
+    cur.execute("SELECT id, name FROM users WHERE name = ?", (name,))
     rows = cur.fetchall()
     conn.close()
     return jsonify({"users": rows})
