@@ -16,3 +16,6 @@ jobs:
 
       - name: Dependency Review
         uses: actions/dependency-review-action@v4
+        with:
+          # Test only: the default is low.
+          fail-on-severity: critical
