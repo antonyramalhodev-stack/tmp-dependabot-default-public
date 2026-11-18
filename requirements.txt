@@ -1,0 +1,3 @@
+# Scratch test for dependency review. These versions are old on purpose.
+requests==2.19.1
+PyYAML==5.3

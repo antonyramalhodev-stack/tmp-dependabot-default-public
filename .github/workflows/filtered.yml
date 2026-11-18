@@ -1,0 +1,17 @@
+name: Path filtered
+
+# This pull request changes no file under docs/, so the filter skips the workflow.
+on:
+  pull_request:
+    paths:
+      - "docs/**"
+
+permissions:
+  contents: read
+
+jobs:
+  filtered:
+    name: Filtered example
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "runs only for docs changes"

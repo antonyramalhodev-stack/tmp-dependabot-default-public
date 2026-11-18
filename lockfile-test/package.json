@@ -1,0 +1,9 @@
+{
+  "name": "lockfile-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scratch test for dependency review. The version is old on purpose.",
+  "dependencies": {
+    "mkdirp": "0.5.1"
+  }
+}

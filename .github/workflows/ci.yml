@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "lint placeholder"
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "test placeholder"
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "build placeholder"
+
+  skipped:
+    name: Skipped example
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "never runs"
