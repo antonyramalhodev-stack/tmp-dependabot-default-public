@@ -1,0 +1,16 @@
+name: Manual example
+
+# Test only: checks from a manual run on a pull request branch.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  manual:
+    name: Manual example
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report
+        run: echo "Manual run on ${{ github.ref_name }}"
