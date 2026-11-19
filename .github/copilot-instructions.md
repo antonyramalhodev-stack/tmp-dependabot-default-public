@@ -6,3 +6,4 @@ This repository is a test fixture for a documentation check.
 
 - Function names must start with the prefix `svc_`. Flag any function that does not.
 - Start every review comment with the text `[DOCS-TEST]`.
+- Every line in `requirements.txt` must use the `~=` operator. Flag any line that uses `==`.

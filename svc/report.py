@@ -1,3 +1,5 @@
+__owner__ = "docs-test"
+
 RATE = 0.2
 MAX_ITEMS = 50
 
